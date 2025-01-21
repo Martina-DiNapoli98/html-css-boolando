@@ -35,29 +35,67 @@ header{
 }
 
 .card{
+    padding-top: 40px;
     display: flex;
     justify-content: center;
-    padding: 40px;
+    gap: 20px;
+
+   
     
     img{
-        width: 300px;
-        padding: 8px;
+        max-width: 100%;
     }
 
 }
 
 .photo{
 position: relative;
+width: 350px;
     
 }
 
 .heart{
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 0;
     background-color: white;
-    
-    
-    
+    padding: 10px;
+}
 
+.sales{
+    position: absolute;
+    background-color: red;
+    color: white;
+    bottom: 90px;
+    left: 10px;
+}
+
+.sostenibilità{
+    font-weight: bold;
+    position: absolute;
+    background-color: green;
+    color: white;
+    bottom: 90px;
+    left: 50px;
+    font-weight: bold;
+}
+
+.last{
+    font-weight: bold;
+    position: absolute;
+    background-color: green;
+    color: white;
+    bottom: 90px;
+    left: 20px;
+    font-weight: bold;
+}
+
+
+.euro{
+    color: red;
+    font-weight: bold;
+}
+.old-price{
+    padding: 10px;
+    text-decoration: line-through;
 }
