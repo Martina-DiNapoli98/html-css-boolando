@@ -7,10 +7,12 @@ header{
     background-color: #ff6900;
     
 }
+
+/* utilities */
+
 .container{
     max-width: 80%;
     margin: auto;
-    border: 2px shadow grey;
 }
 .d-flex{
     display: flex;
@@ -32,3 +34,30 @@ header{
 
 }
 
+.card{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    
+    img{
+        width: 300px;
+        padding: 8px;
+    }
+
+}
+
+.photo{
+position: relative;
+    
+}
+
+.heart{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    
+    
+    
+
+}
