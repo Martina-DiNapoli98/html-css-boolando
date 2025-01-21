@@ -5,7 +5,27 @@ body{
 }
 header{
     background-color: #ff6900;
+    position: fixed;
+    width: 100%;
+    z-index:100 ;
+
+    .d-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+footer{
+    background-color: #1a1a1a;
+    padding: 10px;
+    margin-top: 40px;
     
+    .d-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 /* utilities */
@@ -14,28 +34,23 @@ header{
     max-width: 80%;
     margin: auto;
 }
-.d-flex{
+
+ul{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    ul{
-        display: flex;
-        justify-content: start;
-        list-style: none;
-        font-weight: bold;
-    }
-
-    a{
-         color: white;
-        text-decoration: none;
-        padding: 10px;
-    }
-
+    justify-content: start;
+    list-style: none;
+    font-weight: bold;
 }
 
+a{
+    color: white;
+   text-decoration: none;
+   padding: 5px;
+}
+
+
 .card{
-    padding-top: 40px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -51,8 +66,18 @@ header{
 .photo{
 position: relative;
 width: 350px;
-    
 }
+    
+.top-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.top-img:hover{
+    opacity: 1;
+}
+
 
 .heart{
     position: absolute;
@@ -60,6 +85,12 @@ width: 350px;
     right: 0;
     background-color: white;
     padding: 10px;
+    display: none;
+    
+}
+
+.heart:hover{
+    color: red;
 }
 
 .sales{
@@ -67,7 +98,7 @@ width: 350px;
     background-color: red;
     color: white;
     bottom: 90px;
-    left: 10px;
+    left: 0px;
 }
 
 .sostenibilità{
@@ -76,7 +107,7 @@ width: 350px;
     background-color: green;
     color: white;
     bottom: 90px;
-    left: 50px;
+    left: 40px;
     font-weight: bold;
 }
 
@@ -86,7 +117,7 @@ width: 350px;
     background-color: green;
     color: white;
     bottom: 90px;
-    left: 20px;
+    left: 0;
     font-weight: bold;
 }
 
@@ -98,4 +129,8 @@ width: 350px;
 .old-price{
     padding: 10px;
     text-decoration: line-through;
+}
+
+h3, h4{
+    color: white;
 }
